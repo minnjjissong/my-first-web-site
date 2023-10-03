@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>스타팅 포켓몬</h3>
+    <p>나오하</p>
+    <p>뜨아거</p>
+    <p>꾸왁스</p>
+    <script>
+      const pokemons = ['나오하', '뜨아거'];
+      document.write(pokemons[0]);
+      document.write(pokemons[1]);
+    </script>
+
+    <h3>push</h3>
+    <script>
+      pokemons.push('꾸왁스');
+      document.write(pokemons[2]);
+      document.write(pokemons.length);
+    </script>
+
+    <h3>array</h3>
+    <script>
+      document.write('<li>' + pokemons[0] + '</li>');
+      document.write('<li>' + pokemons[1] + '</li>');
+      document.write('<li>' + pokemons[2] + '</li>');
+    </script>
+
+    <h3>while</h3>
+    <script>
+      var i = 0;
+      while (i < 3) {
+        document.write('<li>' + pokemons[i] + '</li>');
+        i = i + 1;
+      }
+    </script>
+  </body>
+</html>
