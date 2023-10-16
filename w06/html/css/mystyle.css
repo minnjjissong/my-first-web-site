@@ -1,0 +1,96 @@
+/* mystyle.css */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: red;
+  text-decoration: none;
+}
+
+body {
+  background-color: black;
+  color: whitesmoke;
+  margin: 0px;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+  color: red;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h1 a {
+  color: red;
+  text-decoration: none;
+  display: block;
+  font-size: 75px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 2px solid red;
+  margin: 0px;
+  padding: 20px;
+}
+
+ol ol {
+  border: 2px red solid;
+}
+
+h2 {
+  margin: 10px;
+  font-weight: 900;
+}
+
+img {
+  width: 300px;
+  height: 200px;
+  margin: 10px;
+}
+
+input {
+  background-color: black;
+  padding: 5px 15px;
+  color: whitesmoke;
+  font-size: 13px;
+  font-weight: 900;
+  margin: 0 15px;
+  border: 2px whitesmoke solid;
+}
+
+.contents {
+  margin-left: 25px;
+}
+
+.h2_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#grid ol {
+  width: 100px;
+  margin: 2px;
+  padding: 20px;
+  text-align: center;
+}
+
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+@media (max-width: 800px) {
+  #grid {
+    display: block;
+  }
+
+  img {
+    width: 500px;
+    height: 300px;
+  }
+
+  h1 {
+    border-bottom: none;
+  }
+}
